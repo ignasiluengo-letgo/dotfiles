@@ -2,24 +2,10 @@
 	"in_process_packages":
 	[
 	],
-	"install_missing": true,
 	"installed_packages":
 	[
-		"Alignment",
-		"BracketHighlighter",
-		"DocBlockr",
-		"Emmet",
-		"GitGutter",
-		"Laravel Blade Highlighter",
 		"Package Control",
-		"Sass",
 		"Seti_UI",
-		"Seti_UX",
-		"SideBarEnhancements",
-		"SublimeLinter",
-		"SublimeLinter-csslint",
-		"SublimeLinter-php",
-		"Tag",
-		"Twig"
+		"Seti_UX"
 	]
 }

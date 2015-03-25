@@ -6,11 +6,9 @@
     * ./install.sh
 
 ## It is understood that is already installed
-    * Oh My ZSH
+    * Oh My Fish
     * SublimeText
     * Intellij Idea 14
     * AutoJump
     * Git
     * PHP
-    * iMacros
-    * Gnome Terminal
