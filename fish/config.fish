@@ -5,7 +5,7 @@ set fish_path $HOME/.oh-my-fish
 set fish_theme robbyrussell
 
 # Autojump
-if test -f /Users/rafael.antonio/.autojump/etc/profile.d/autojump.fish; . /Users/rafael.antonio/.autojump/etc/profile.d/autojump.fish; end
+if test -f /Users/rafael.antonio/.autojump/share/autojump/autojump.fish; . /Users/rafael.antonio/.autojump/share/autojump/autojump.fish; end
 
 # Percol
 function fish_user_key_bindings
@@ -24,4 +24,4 @@ set fish_plugins autojump percol
 # Aliases
 . $HOME/.dotfiles/utils/aliases.sh
 # Exports
-# . $HOME/.dotfiles/utils/exports.sh
+. $HOME/.dotfiles/utils/exports.sh

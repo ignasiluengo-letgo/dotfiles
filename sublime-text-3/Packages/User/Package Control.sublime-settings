@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"Enhanced Clojure",
 		"Package Control",
 		"Seti_UI",
 		"Seti_UX"
