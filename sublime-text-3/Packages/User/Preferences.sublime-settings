@@ -17,8 +17,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Tag"
+		"Tag",
+		"Vintage"
 	],
 	"line_padding_bottom": 7,
 	"line_padding_top": 7,
@@ -28,7 +28,7 @@
 		120
 	],
 	"tab_size": 4,
-	"theme": "Seti.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true

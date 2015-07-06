@@ -1,5 +1,11 @@
+ulimit -n 65536
+ulimit -u 2048
+
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
+
+# Intro message
+set fish_greeting "A por todas, Rafa!"
 
 # Theme
 set fish_theme robbyrussell
