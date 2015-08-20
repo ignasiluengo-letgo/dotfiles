@@ -6,8 +6,9 @@ alias reloadaliases="source ~/.dotfiles/utils/aliases.sh"
 # Git
 alias gc='git commit'
 alias gd='git diff --color'
-alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
-alias gs="git status -sb"
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr, %cd)%Creset" --abbrev-commit --date=iso'
+alias gs='git status -sb'
+alias gf='git fetch --all -p'
 
 # Front
 alias gulp='./node_modules/gulp/bin/gulp.js build'
@@ -70,6 +71,7 @@ function phpserve
 end
 alias phpunit='./vendor/bin/phpunit --colors'
 alias pf='./vendor/bin/phpunit --filter'
+alias pb='./vendor/bin/phpunit --exclude=integration,external'
 alias behat='./vendor/bin/behat'
 alias bf='./vendor/bin/behat --tags=~skip -p'
 
