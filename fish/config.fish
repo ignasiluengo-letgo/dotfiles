@@ -21,13 +21,11 @@ end
 # Plugins
 set fish_plugins autojump percol
 
-# Custom path
-#set fish_custom $HOME/.dotfiles/fish/custom
-
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
 # Aliases
 . $HOME/.dotfiles/utils/aliases.sh
+
 # Exports
 . $HOME/.dotfiles/utils/exports.sh
