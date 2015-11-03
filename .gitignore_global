@@ -5,3 +5,6 @@
 
 # Mac
 .DS_Store
+
+# Other stuff
+completer.hist
