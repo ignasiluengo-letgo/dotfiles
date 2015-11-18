@@ -1,4 +1,5 @@
 # Alias de Alias
+alias editdotfiles='subl ~/.dotfiles'
 alias editaliases='vim ~/.dotfiles/utils/aliases.sh'
 alias cataliases='cat ~/.dotfiles/utils/aliases.sh'
 alias reloadaliases='source ~/.dotfiles/utils/aliases.sh'
@@ -10,11 +11,13 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %a
 alias gs='git status -sb'
 alias gf='git fetch --all -p'
 alias gp='git pull'
+alias gmm='git merge master'
 
 # Server
 alias edithosts='sudo vim /etc/hosts'
 
 # Php
+alias phprepl='psysh'
 alias fpm56='/usr/local/Cellar/php56/5.6.14/sbin/php56-fpm'
 
 function showphp56fpm
@@ -88,3 +91,11 @@ function uuid_code
 end
 
 alias removecache='rm -rf ./applications/*/app/cache/*'
+
+# AWS
+function s
+    ec2s frontend | percol --prompt='CONNECT TO>' | read -l target
+    set ip (echo $target | awk '{print $2}')
+    set port (echo $target | awk '{print $3}')
+    ssh -l $MY_SSH_USERNAME $ip -p$port
+end

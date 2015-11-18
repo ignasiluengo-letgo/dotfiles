@@ -10,3 +10,4 @@
 
 # Private Stuff
 /utils/private-aliases.sh
+/utils/globals.sh
