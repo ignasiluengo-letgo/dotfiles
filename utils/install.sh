@@ -19,3 +19,7 @@ sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /b
 # PHP
 mkdir $HOME/.config/psysh
 ln -s -i $HOME/.dotfiles/php/psysh-config.php $HOME/.config/psysh/config.php
+
+# Clojure
+mkdir $HOME/.lein
+ln -s -i $HOME/.dotfiles/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
