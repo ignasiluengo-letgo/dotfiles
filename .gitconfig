@@ -15,7 +15,7 @@
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
     editor = vim
-	autocrlf = input
+    autocrlf = input
 
 [help]
     autocorrect = 1
@@ -28,12 +28,12 @@
     force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
 
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+    clean = git hawser clean %f
+    smudge = git hawser smudge %f
+    required = true
 
 [diff "json"]
     textconv = python -m json.tool
 
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain

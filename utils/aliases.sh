@@ -53,6 +53,7 @@ alias pb='./vendor/bin/phpunit --exclude=integration,external'
 alias pi='./vendor/bin/phpunit --group=integration,external'
 alias behat='./vendor/bin/behat'
 alias bf='./vendor/bin/behat --tags=~skip -p'
+alias bfp='./vendor/bin/behat --tags=~skip --format=progress -vvv -p'
 
 # Ip's
 alias privateip='ipconfig getifaddr en0'
@@ -60,6 +61,13 @@ alias publicip="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -
 
 function port_owner
     lsof -n -i4TCP:$argv | grep LISTEN
+end
+
+# MySQL
+function delete_mysql_tables_starting_by
+    mysql -uroot -N -B -e "SELECT CONCAT('DROP DATABASE ', SCHEMA_NAME, ';') AS QUERY FROM `information_schema`.`SCHEMATA` WHERE SCHEMA_NAME LIKE '$argv%';" | while read -l line
+        mysql -uroot -e "$line"
+    end
 end
 
 # Utils
