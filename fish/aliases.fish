@@ -6,12 +6,17 @@ alias reloadaliases='source ~/.dotfiles/utils/aliases.sh'
 
 # Git
 alias gc='git commit'
+alias ga='git commit --amend'
+alias gca='git add -A; git commit --amend'
 alias gd='git diff --color'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr, %cd)%Creset" --abbrev-commit --date=iso'
 alias gs='git status -sb'
 alias gf='git fetch --all -p'
-alias gp='git pull'
+alias gp='git push'
+alias gfp='git push -f'
+alias gpl='git pull'
 alias gmm='git merge master'
+alias gpum='git pull upstream master'
 
 # Server
 alias edithosts='sudo vim /etc/hosts'
@@ -102,8 +107,7 @@ alias removecache='rm -rf ./applications/*/app/cache/*'
 
 # AWS
 function s
-    ec2s frontend | percol --prompt='CONNECT TO>' | read -l target
+    ec2s $argv | percol --prompt='CONNECT TO>' | read -l target
     set ip (echo $target | awk '{print $2}')
-    set port (echo $target | awk '{print $3}')
-    ssh -l $MY_SSH_USERNAME $ip -p$port
+    ssh -l $MY_SSH_AKAMON_USERNAME $ip
 end

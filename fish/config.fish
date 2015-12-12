@@ -28,6 +28,6 @@ set fish_plugins autojump percol
 . $HOME/.dotfiles/utils/exports.sh
 
 # Aliases
-. $HOME/.dotfiles/utils/aliases.sh
-. $HOME/.dotfiles/utils/private-aliases.sh
-. $HOME/.dotfiles/utils/globals.sh
+. $HOME/.dotfiles/fish/globals.fish
+. $HOME/.dotfiles/fish/aliases.fish
+. $HOME/.dotfiles/fish/private-aliases.fish

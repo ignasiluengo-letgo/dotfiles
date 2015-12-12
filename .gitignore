@@ -1,13 +1,11 @@
 # Sublime Stuff
 /sublime-text-3/Packages/User/Package Control.cache
 /sublime-text-3/Packages/User/Package Control.last-run
-/sublime-text-3/Packages/User/linters
-/sublime-text-3/Packages/User/SublimeLinter
 /sublime-text-3/Packages/User/Package Control.merged-ca-bundle
 /sublime-text-3/Packages/User/Package Control.user-ca-bundle
-/sublime-text-3/Packages/User/bh_unicode_properties.cache
 /sublime-text-3/Packages/User/Package\ Control.system-ca-bundle
 
 # Private Stuff
-/utils/private-aliases.sh
-/utils/globals.sh
+/fish/private-aliases.fish
+/fish/globals.fish
+/bin/ec2s
