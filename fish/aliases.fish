@@ -1,8 +1,8 @@
 # Alias de Alias
 alias editdotfiles='subl ~/.dotfiles'
-alias editaliases='vim ~/.dotfiles/utils/aliases.sh'
-alias cataliases='cat ~/.dotfiles/utils/aliases.sh'
-alias reloadaliases='source ~/.dotfiles/utils/aliases.sh'
+alias editaliases='vim ~/.dotfiles/fish/aliases.fish'
+alias cataliases='cat ~/.dotfiles/fish/aliases.fish'
+alias reloadaliases='source ~/.dotfiles/fish/aliases.fish'
 
 # Git
 alias gc='git commit'
@@ -13,10 +13,10 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %a
 alias gs='git status -sb'
 alias gf='git fetch --all -p'
 alias gp='git push'
-alias gfp='git push -f'
 alias gpl='git pull'
 alias gmm='git merge master'
 alias gpum='git pull upstream master'
+alias gfp='git push -f'
 
 # Server
 alias edithosts='sudo vim /etc/hosts'

@@ -15,7 +15,7 @@ ln -s -i $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
 # Sublime
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -s $HOME/.dotfiles/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
-sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /bin/subl
+sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # PHP
 mkdir $HOME/.config/psysh

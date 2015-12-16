@@ -25,7 +25,7 @@ set fish_plugins autojump percol
 . $fish_path/oh-my-fish.fish
 
 # Exports
-. $HOME/.dotfiles/utils/exports.sh
+. $HOME/.dotfiles/fish/exports.fish
 
 # Aliases
 . $HOME/.dotfiles/fish/globals.fish
