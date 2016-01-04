@@ -17,6 +17,9 @@ rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -s $HOME/.dotfiles/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
+# Intellij
+sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea15/idea.vmoptions
+
 # PHP
 mkdir $HOME/.config/psysh
 ln -s -i $HOME/.dotfiles/php/psysh-config.php $HOME/.config/psysh/config.php
