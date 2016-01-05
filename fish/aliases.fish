@@ -60,6 +60,18 @@ alias behat='./vendor/bin/behat'
 alias bf='./vendor/bin/behat --tags=~skip -p'
 alias bfp='./vendor/bin/behat --tags=~skip --format=progress -vvv -p'
 
+function enable-xdebug
+    sudo mv /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini.bak /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
+end
+function disable-xdebug
+    sudo mv /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini.bak
+end
+function ci
+    disable-xdebug
+    composer install $argv
+    enable-xdebug
+end
+
 # Ip's
 alias privateip='ipconfig getifaddr en0'
 alias publicip="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*\$//'"
