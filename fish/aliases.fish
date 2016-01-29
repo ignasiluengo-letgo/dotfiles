@@ -54,8 +54,6 @@ function phpserve
 end
 alias phpunit='./vendor/bin/phpunit --colors'
 alias pf='./vendor/bin/phpunit --filter'
-alias pb='./vendor/bin/phpunit --exclude=integration,external'
-alias pi='./vendor/bin/phpunit --group=integration,external'
 alias behat='./vendor/bin/behat'
 alias bf='./vendor/bin/behat --tags=~skip -p'
 alias bfp='./vendor/bin/behat --tags=~skip --format=progress -vvv -p'
@@ -93,7 +91,6 @@ alias reveal='open .'
 alias count_files_recursive='find . -type f -print | wc -l'
 alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
 alias size_of_the_current_directory='du -ch | grep total'
-alias YOLO='sudo find . -exec chmod 777 {} \;'
 alias get_last_executed_command='echo $history[1]'
 alias fuck!='sudo $history[1]'
 alias stt='subl .'
@@ -114,8 +111,6 @@ function uuid_code
     echo -n $uuid | pbcopy
     echo $uuid
 end
-
-alias removecache='rm -rf ./applications/*/app/cache/*'
 
 # AWS
 function s
