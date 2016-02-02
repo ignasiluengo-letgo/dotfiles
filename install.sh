@@ -23,6 +23,7 @@ sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/
 # PHP
 mkdir $HOME/.config/psysh
 ln -s -i $HOME/.dotfiles/php/psysh-config.php $HOME/.config/psysh/config.php
+ln -s -i $HOME/.dotfiles/php/composer.json $HOME/.composer/composer.json
 
 # Clojure
 mkdir $HOME/.lein
