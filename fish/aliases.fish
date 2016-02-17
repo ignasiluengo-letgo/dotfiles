@@ -79,7 +79,7 @@ function port_owner
 end
 
 # MySQL
-function delete_mysql_tables_starting_by
+function delete_mysql_db_starting_by
     mysql -uroot -N -B -e "SELECT CONCAT('DROP DATABASE ', SCHEMA_NAME, ';') AS QUERY FROM `information_schema`.`SCHEMATA` WHERE SCHEMA_NAME LIKE '$argv%';" | while read -l line
         mysql -uroot -e "$line"
     end
