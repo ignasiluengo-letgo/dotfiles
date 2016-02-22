@@ -111,7 +111,9 @@ function uuid_code
     echo -n $uuid | pbcopy
     echo $uuid
 end
-
+function meteo_in
+    curl -4 http://wttr.in/$argv
+end
 # AWS
 function s
     ec2s $argv | percol --prompt='CONNECT TO>' | read -l target
