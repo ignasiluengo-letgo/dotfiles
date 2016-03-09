@@ -26,14 +26,22 @@
     amend = commit -a --amend
     discard-changes = reset --hard origin/master
     force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
+	d = difftool
 
 [filter "hawser"]
     clean = git hawser clean %f
     smudge = git hawser smudge %f
     required = true
 
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
 [diff "json"]
     textconv = python -m json.tool
 
 [credential]
     helper = osxkeychain
+
