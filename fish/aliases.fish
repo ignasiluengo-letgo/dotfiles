@@ -141,6 +141,13 @@ function github_diff
     echo $url
 end
 
+function delete_parameters
+    find . -type f -name "*parameters.yml.dist"| while read -l line
+        rm (echo $line | sed "s/.yml.dist/.yml/")
+    end
+    echo 'Done!'
+end
+
 # AWS
 function s
     ec2s $argv | percol --prompt='CONNECT TO>' | read -l target
