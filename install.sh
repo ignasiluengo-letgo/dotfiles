@@ -18,7 +18,7 @@ ln -s $HOME/.dotfiles/sublime-text-3/Packages/User $HOME/Library/Application\ Su
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # Intellij
-sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea15/idea.vmoptions
+sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/elliJIdea2016.1//idea.vmoptions
 
 # PHP
 mkdir $HOME/.config/psysh
