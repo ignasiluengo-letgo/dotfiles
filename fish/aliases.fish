@@ -25,28 +25,35 @@ alias edithosts='sudo vim /etc/hosts'
 
 # Php
 alias phprepl='psysh'
+alias fpm70='/usr/local/Cellar/php70/7.0.4/sbin/php-fpm'
 alias fpm56='/usr/local/Cellar/php56/5.6.14/sbin/php56-fpm'
 
-function showphp56fpm
-    set_color FF0
-    php -v;
-    set_color purple
-    fpm56 status
-    set_color normal
+function unlink_php
+    brew unlink php56 > /dev/null;
+    brew unlink php70 > /dev/null;
 end
 
-function use56
+function use_php_70
+    unlink_php
+    brew link php70 > /dev/null;
+    killall php-fpm
+    sudo rm /usr/sbin/php-fpm
+    sudo ln -s /usr/local/Cellar/php70/7.0.4/sbin/php-fpm /usr/sbin/php-fpm
+    fpm56 start > /dev/null;
+end
+
+function use_php_56
+    unlink_php
     brew link php56 > /dev/null;
     killall php-fpm
     sudo rm /usr/sbin/php-fpm
     sudo ln -s /usr/local/Cellar/php56/5.6.14/sbin/php-fpm /usr/sbin/php-fpm
     fpm56 start > /dev/null;
-    showphp56fpm
 end
 
 function startserve
     mysql.server start
-    use56
+    use_php_70
     sudo nginx
     sudo nginx -s reload
 end
@@ -61,10 +68,10 @@ alias bf='./vendor/bin/behat --tags=~skip -p'
 alias bfp='./vendor/bin/behat --tags=~skip --format=progress -vvv -p'
 
 function enable-xdebug
-    sudo mv /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini.bak /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
+    sudo mv /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini.bak /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
 end
 function disable-xdebug
-    sudo mv /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini.bak
+    sudo mv /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini.bak
 end
 function ci
     disable-xdebug
@@ -98,6 +105,7 @@ alias fuck!='sudo $history[1]'
 alias stt='subl .'
 alias normalize_perissions='chmod 775'
 alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
+alias plogs='lnav'
 function uuid_to_db
     set uuid (echo $argv | tr '[:lower:]' '[:upper:]' | sed 's/\-//g')
     echo -n $uuid | pbcopy
