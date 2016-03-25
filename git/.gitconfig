@@ -1,3 +1,12 @@
+[alias]
+    a = commit -a --amend
+    c = commit -a
+    d = difftool
+    u = reset HEAD~1 --mixed
+    force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
+    discard-changes = reset --hard origin/master
+    apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
+
 [user]
     name = Rafa Gómez
     email = dotzecker@gmail.com
@@ -20,14 +29,6 @@
 [help]
     autocorrect = 1
 
-[alias]
-    apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
-    undo = reset HEAD~1 --mixed
-    amend = commit -a --amend
-    discard-changes = reset --hard origin/master
-    force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
-	d = difftool
-
 [filter "hawser"]
     clean = git hawser clean %f
     smudge = git hawser smudge %f
@@ -45,3 +46,33 @@
 [credential]
     helper = osxkeychain
 
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+    ui = always
+
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
