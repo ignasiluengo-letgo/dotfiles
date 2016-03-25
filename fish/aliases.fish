@@ -1,164 +1,18 @@
 # Alias de Alias
 alias editdotfiles='subl ~/.dotfiles'
-alias editaliases='vim ~/.dotfiles/fish/aliases.fish'
-alias cataliases='cat ~/.dotfiles/fish/aliases.fish'
 alias reloadaliases='source ~/.dotfiles/fish/aliases.fish'
 
 # Git
-alias gc='git commit'
-alias ga='git commit --amend'
-alias gca='git add -A; git commit --amend'
-alias gd='git diff --color'
-alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr, %cd)%Creset" --abbrev-commit --date=iso'
-alias gs='git status -sb'
-alias gf='git fetch --all -p'
-alias gp='git push'
-alias gpl='git pull'
-alias gmm='git merge master'
-alias gpum='git pull upstream master'
-alias gpom='git pull origin master'
-alias gfp='git push -f'
-alias git-changed-files='git diff --name-only master'
-
-# Server
-alias edithosts='sudo vim /etc/hosts'
-
+. $HOME/.dotfiles/fish/aliases/git.fish
 # Php
-alias phprepl='psysh'
-alias fpm70='/usr/local/Cellar/php70/7.0.4/sbin/php-fpm'
-alias fpm56='/usr/local/Cellar/php56/5.6.14/sbin/php56-fpm'
-
-function unlink_php
-    brew unlink php56 > /dev/null;
-    brew unlink php70 > /dev/null;
-end
-
-function use_php_70
-    unlink_php
-    brew link php70 > /dev/null;
-    killall php-fpm
-    sudo rm /usr/sbin/php-fpm
-    sudo ln -s /usr/local/Cellar/php70/7.0.4/sbin/php-fpm /usr/sbin/php-fpm
-    fpm56 start > /dev/null;
-end
-
-function use_php_56
-    unlink_php
-    brew link php56 > /dev/null;
-    killall php-fpm
-    sudo rm /usr/sbin/php-fpm
-    sudo ln -s /usr/local/Cellar/php56/5.6.14/sbin/php-fpm /usr/sbin/php-fpm
-    fpm56 start > /dev/null;
-end
-
-function startserve
-    mysql.server start
-    use_php_70
-    sudo nginx
-    sudo nginx -s reload
-end
-
-function phpserve
-    sudo php -S 0.0.0.0:$argv
-end
-alias phpunit='./vendor/bin/phpunit --colors'
-alias pf='./vendor/bin/phpunit --filter'
-alias behat='./vendor/bin/behat'
-alias bf='./vendor/bin/behat --tags=~skip -p'
-alias bfp='./vendor/bin/behat --tags=~skip --format=progress -vvv -p'
-
-function enable-xdebug
-    sudo mv /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini.bak /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
-end
-function disable-xdebug
-    sudo mv /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini.bak
-end
-function ci
-    disable-xdebug
-    composer install $argv
-    enable-xdebug
-end
-
+. $HOME/.dotfiles/fish/aliases/php.fish
 # Ip's
-alias privateip='ipconfig getifaddr en0'
-alias publicip="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*\$//'"
-
-function port_owner
-    lsof -n -i4TCP:$argv | grep LISTEN
-end
-
+. $HOME/.dotfiles/fish/aliases/ip.fish
 # MySQL
-function delete_mysql_db_starting_by
-    mysql -uroot -N -B -e "SELECT CONCAT('DROP DATABASE ', SCHEMA_NAME, ';') AS QUERY FROM `information_schema`.`SCHEMATA` WHERE SCHEMA_NAME LIKE '$argv%';" | while read -l line
-        mysql -uroot -e "$line"
-    end
-end
-
-# Utils
-alias twitter='rainbowstream'
-alias reveal='open .'
-alias count_files_recursive='find . -type f -print | wc -l'
-alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
-alias size_of_the_current_directory='du -ch | grep total'
-alias get_last_executed_command='echo $history[1]'
-alias fuck!='sudo $history[1]'
-alias stt='subl .'
-alias normalize_perissions='chmod 775'
-alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
-alias plogs='lnav'
-function uuid_to_db
-    set uuid (echo $argv | tr '[:lower:]' '[:upper:]' | sed 's/\-//g')
-    echo -n $uuid | pbcopy
-    echo $uuid
-end
-function uuid_db
-    set uuid (uuidgen | sed 's/\-//g')
-    echo -n $uuid | pbcopy
-    echo $uuid
-end
-function uuid_code
-    set uuid (uuidgen | tr '[:upper:]' '[:lower:]')
-    echo -n $uuid | pbcopy
-    echo $uuid
-end
-function meteo_in
-    curl -4 http://wttr.in/$argv
-end
-function github_diff
-    switch (count $argv)
-    case 0
-        set repo rgomezcasas/dotfiles
-        set compare_from master
-        set compare_to master
-    case 1
-        set repo $argv[1]
-        set compare_from master
-        set compare_to master
-    case 2
-        set repo $argv[1]
-        set compare_from $argv[2]
-        set compare_to master
-    case 3
-        set repo $argv[1]
-        set compare_from $argv[2]
-        set compare_to $argv[3]
-    end
-
-    set url https://github.com/"$repo"/compare/"$compare_from"..."$compare_to"
-    echo -n $url | pbcopy
-    echo $url
-end
-
-function delete_parameters
-    find . -type f -name "*parameters.yml.dist"| while read -l line
-        rm (echo $line | sed "s/.yml.dist/.yml/")
-    end
-    echo 'Done!'
-end
-
+. $HOME/.dotfiles/fish/aliases/mysql.fish
+# UUID
+. $HOME/.dotfiles/fish/aliases/uuid.fish
 # AWS
-function s
-    ec2s $argv | percol --prompt='CONNECT TO>' | read -l target
-    set ip (echo $target | awk '{print $2}')
-    ssh -l $MY_SSH_AKAMON_USERNAME $ip
-end
+. $HOME/.dotfiles/fish/aliases/aws.fish
+# Utils
+. $HOME/.dotfiles/fish/aliases/utils.fish

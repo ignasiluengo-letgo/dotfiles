@@ -1,17 +1,12 @@
 ulimit -n 65536
 ulimit -u 2048
 
-# Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
-
-# Intro message
-set fish_greeting "A por todas, Rafa!"
-
-# Theme
+set fish_greeting ":)"
 set fish_theme robbyrussell
 
 # Autojump
-if test -f /Users/rafael.antonio/.autojump/share/autojump/autojump.fish; . /Users/rafael.antonio/.autojump/share/autojump/autojump.fish; end
+if test -f $HOME/.autojump/share/autojump/autojump.fish; . $HOME/.autojump/share/autojump/autojump.fish; end
 
 # Percol
 function fish_user_key_bindings
