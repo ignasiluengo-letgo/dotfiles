@@ -11,18 +11,14 @@ function use_php_70
     unlink_php
     brew link php70 > /dev/null;
     killall php-fpm
-    sudo rm /usr/sbin/php-fpm
-    sudo ln -s /usr/local/Cellar/php70/7.0.4/sbin/php-fpm /usr/sbin/php-fpm
-    fpm56 start > /dev/null;
+    sudo fpm70 start > /dev/null;
 end
 
 function use_php_56
     unlink_php
     brew link php56 > /dev/null;
     killall php-fpm
-    sudo rm /usr/sbin/php-fpm
-    sudo ln -s /usr/local/Cellar/php56/5.6.14/sbin/php-fpm /usr/sbin/php-fpm
-    fpm56 start > /dev/null;
+    sudo php56 start > /dev/null;
 end
 
 function startserve

@@ -1,6 +1,5 @@
-alias gc='git commit'
+alias gc='git commit -a'
 alias ga='git commit --amend'
-alias gca='git add -A; git commit --amend'
 alias gd='git diff --color'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr, %cd)%Creset" --abbrev-commit --date=iso'
 alias gs='git status -sb'
@@ -11,7 +10,6 @@ alias gmm='git merge master'
 alias gpum='git pull upstream master'
 alias gpom='git pull origin master'
 alias gfp='git push -f'
-alias git-changed-files='git diff --name-only master'
 
 function github_diff
     switch (count $argv)

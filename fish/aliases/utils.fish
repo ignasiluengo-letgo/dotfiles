@@ -10,6 +10,7 @@ alias stt='subl .'
 alias normalize_perissions='chmod 775'
 alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias plogs='lnav'
+alias brwe='brew'
 
 function meteo_in
     curl -4 http://wttr.in/$argv

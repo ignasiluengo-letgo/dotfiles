@@ -16,3 +16,5 @@ alias reloadaliases='source ~/.dotfiles/fish/aliases.fish'
 . $HOME/.dotfiles/fish/aliases/aws.fish
 # Utils
 . $HOME/.dotfiles/fish/aliases/utils.fish
+# Private
+. $HOME/.dotfiles/fish/aliases/private-aliases.fish

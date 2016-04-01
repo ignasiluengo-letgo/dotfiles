@@ -3,9 +3,10 @@
     c = commit -a
     d = difftool
     u = reset HEAD~1 --mixed
-    force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
-    discard-changes = reset --hard origin/master
     apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
+    changed-files = diff --name-only master
+    discard = !git add -A && git reset --hard
+    force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
 
 [user]
     name = Rafa Gómez

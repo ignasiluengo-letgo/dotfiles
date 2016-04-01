@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# Fish config
-rm -rf $HOME/.config/fish/config.fish
-ln -s -i $HOME/.dotfiles/fish/config.fish $HOME/.config/fish/config.fish
-
 # Git
 ln -s -i $HOME/.dotfiles/git/.gitconfig $HOME/.gitconfig
 ln -s -i $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
@@ -18,7 +14,7 @@ ln -s $HOME/.dotfiles/sublime-text-3/Packages/User $HOME/Library/Application\ Su
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # Intellij
-sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/elliJIdea2016.1//idea.vmoptions
+sudo ln -s -i $HOME/.dotfiles/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea2016.1/idea.vmoptions
 
 # PHP
 mkdir $HOME/.config/psysh

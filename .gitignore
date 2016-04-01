@@ -6,6 +6,6 @@
 /sublime-text-3/Packages/User/Package\ Control.system-ca-bundle
 
 # Private Stuff
-/fish/private-aliases.fish
+/fish/aliases/private-aliases.fish
 /fish/globals.fish
 /bin/ec2s
