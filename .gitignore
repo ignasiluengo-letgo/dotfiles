@@ -7,5 +7,5 @@
 
 # Private Stuff
 /fish/aliases/private-aliases.fish
-/fish/globals.fish
+/fish/exports/globals.fish
 /bin/ec2s

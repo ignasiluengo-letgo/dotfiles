@@ -1,43 +1,38 @@
-# name: Rafa
-
-function _git_branch_name
-  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-end
-
-function _is_git_dirty
-  set -l show_untracked (git config --bool bash.showUntrackedFiles)
-  set untracked ''
-  if [ "$theme_display_git_untracked" = 'no' -o "$show_untracked" = 'false' ]
-    set untracked '--untracked-files=no'
-  end
-  echo (command git status -s --ignore-submodules=dirty $untracked ^/dev/null)
-end
-
 function fish_prompt
-  set -l last_status $status
-  set -l cyan (set_color -o cyan)
-  set -l yellow (set_color -o yellow)
-  set -l red (set_color -o red)
-  set -l blue (set_color -o blue)
-  set -l green (set_color -o green)
-  set -l normal (set_color normal)
+  set -l last_command_status $status
+  set -l cwd
 
-  if test $last_status = 0
-      set arrow "$green""λ"
+  set cwd (prompt_pwd)
+
+  set -l lambda   "λ"
+  set -l ahead    "↑"
+  set -l behind   "↓"
+  set -l diverged "⥄ "
+  set -l dirty    "✗"
+
+  set -l normal_color     (set_color normal)
+  set -l success_color    (set_color $fish_pager_color_progress ^/dev/null; or set_color cyan)
+  set -l error_color      (set_color $fish_color_error ^/dev/null; or set_color red --bold)
+  set -l directory_color  (set_color $fish_color_quote ^/dev/null; or set_color brown)
+  set -l repository_color (set_color $fish_color_cwd ^/dev/null; or set_color green)
+
+  if test $last_command_status -eq 0
+    echo -n -s $success_color $lambda $normal_color
   else
-      set arrow "$red""λ"
+    echo -n -s $error_color $lambda $normal_color
   end
-  set -l cwd $cyan(basename (prompt_pwd))
 
-  if [ (_git_branch_name) ]
-    set -l git_branch $red(_git_branch_name)
-    set git_info "$blue git:($git_branch$blue)"
+  if git_is_repo
+    echo -n -s " " $directory_color $cwd $normal_color
 
-    if [ (_is_git_dirty) ]
-      set -l dirty "$yellow ✗"
-      set git_info "$git_info$dirty"
+    echo -n -s " on " $repository_color (git_branch_name) $normal_color " "
+
+    if git_is_touched
+      echo -n -s $dirty " "
+    else
+      echo -n -s (git_ahead $ahead $behind $diverged)
     end
+  else
+    echo -n -s " " $directory_color $cwd $normal_color " "
   end
-
-  echo -n -s $arrow ' ' $cwd $git_info $normal ' '
 end
