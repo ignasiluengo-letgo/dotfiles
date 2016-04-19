@@ -5,10 +5,11 @@ function fish_prompt
   set cwd (prompt_pwd)
 
   set -l lambda   "λ"
-  set -l ahead    "↑"
-  set -l behind   "↓"
-  set -l diverged "⥄ "
-  set -l dirty    "✗"
+  set -l ahead    " ↑"
+  set -l behind   " ↓"
+  set -l diverged " ⥄ "
+  set -l dirty    " ✗"
+  set -l none     " ✓"
 
   set -l normal_color     (set_color normal)
   set -l success_color    (set_color $fish_pager_color_progress ^/dev/null; or set_color cyan)
@@ -25,12 +26,12 @@ function fish_prompt
   if git_is_repo
     echo -n -s " " $directory_color $cwd $normal_color
 
-    echo -n -s " on " $repository_color (git_branch_name) $normal_color " "
+    echo -n -s " on " $repository_color (git_branch_name) $normal_color
 
     if git_is_touched
       echo -n -s $dirty " "
     else
-      echo -n -s (git_ahead $ahead $behind $diverged)
+      echo -n -s (git_ahead $ahead $behind $diverged $none) " "
     end
   else
     echo -n -s " " $directory_color $cwd $normal_color " "
