@@ -21,6 +21,7 @@
 	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Tag",
@@ -35,6 +36,7 @@
 	"line_padding_top": 5,
 	"material_theme_accent_orange": true,
 	"material_theme_small_tab": true,
+	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[

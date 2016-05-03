@@ -11,14 +11,14 @@ function use_php_70
     unlink_php
     brew link php70 > /dev/null;
     killall php-fpm
-    fpm70 start > /dev/null;
+    fpm70;
 end
 
 function use_php_56
     unlink_php
     brew link php56 > /dev/null;
     killall php-fpm
-    fpm56 start > /dev/null;
+    fpm56;
 end
 
 function startserve
