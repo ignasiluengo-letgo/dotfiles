@@ -13,6 +13,8 @@ alias plogs='lnav'
 alias brwe='brew'
 alias lfp='soccer --standings --league=LLIGA'
 alias fcb='soccer --team=FCB --time=100'
+alias aux='ps uax'
+alias k='kill -9'
 
 function meteo_in
     curl -4 http://wttr.in/$argv
