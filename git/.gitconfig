@@ -2,7 +2,8 @@
     a = commit -a --amend
     c = commit -a
     d = difftool
-    n = commit -n -a --amend
+    n = commit -n -a
+    an = commit -n -a --amend
     undo = reset HEAD~1 --mixed
     discard = !git add -A && git reset --hard
     apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
@@ -38,6 +39,7 @@
 
 [diff]
     tool = vimdiff
+    compactionHeuristic = true
 
 [difftool]
     prompt = false
