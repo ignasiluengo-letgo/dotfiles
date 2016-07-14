@@ -1,6 +1,6 @@
 alias phprepl='psysh'
-alias fpm70='/usr/local/Cellar/php70/7.0.4/sbin/php-fpm'
-alias fpm56='/usr/local/Cellar/php56/5.6.14/sbin/php56-fpm'
+alias fpm70='/usr/local/Cellar/php70/7.0.7/sbin/php-fpm'
+alias fpm56='/usr/local/Cellar/php56/5.6.22/sbin/php56-fpm'
 
 function unlink_php
     brew unlink php56 > /dev/null;
@@ -18,7 +18,7 @@ function use_php_56
     unlink_php
     brew link php56 > /dev/null;
     killall php-fpm
-    fpm56;
+    fpm56 start;
 end
 
 function startserve
