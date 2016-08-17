@@ -10,7 +10,6 @@ alias gpl='git pull'
 alias gmm='git merge master'
 alias gpum='git pull upstream master'
 alias gpom='git pull origin master'
-alias gfp='git push -f'
 alias gb='git branch'
 alias gdb='git branch -D'
 
