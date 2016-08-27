@@ -5,6 +5,9 @@ DOTFILES_PATH=$HOME/.dotfiles
 # Oh My Zsh
 ln -s -i ${DOTFILES_PATH}/zsh/.zshrc $HOME/.zshrc
 
+# Percol
+ln -s -i ${DOTFILES_PATH}/percol/rc.py $HOME/.percol.d/rc.py
+
 # Git
 ln -s -i ${DOTFILES_PATH}git/.gitconfig $HOME/.gitconfig
 ln -s -i ${DOTFILES_PATH}git/.gitignore_global $HOME/.gitignore_global
