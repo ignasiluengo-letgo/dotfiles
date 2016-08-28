@@ -9,29 +9,26 @@ ln -s -i ${DOTFILES_PATH}/zsh/.zshrc $HOME/.zshrc
 ln -s -i ${DOTFILES_PATH}/percol/rc.py $HOME/.percol.d/rc.py
 
 # Git
-ln -s -i ${DOTFILES_PATH}git/.gitconfig $HOME/.gitconfig
-ln -s -i ${DOTFILES_PATH}git/.gitignore_global $HOME/.gitignore_global
-ln -s -i ${DOTFILES_PATH}git/.giattributes $HOME/.giattributes
+ln -s -i ${DOTFILES_PATH}/git/.gitconfig $HOME/.gitconfig
+ln -s -i ${DOTFILES_PATH}/git/.gitignore_global $HOME/.gitignore_global
+ln -s -i ${DOTFILES_PATH}/git/.giattributes $HOME/.giattributes
 
 # Vim
-ln -s -i ${DOTFILES_PATH}vim/.vimrc $HOME/.vimrc
+ln -s -i ${DOTFILES_PATH}/vim/.vimrc $HOME/.vimrc
 
 # Sublime
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ${DOTFILES_PATH}sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
+ln -s ${DOTFILES_PATH}/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # Intellij
-sudo ln -s -i ${DOTFILES_PATH}Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea2016.2/idea.vmoptions
+sudo ln -s -i ${DOTFILES_PATH}/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea2016.2/idea.vmoptions
 
 # PHP
 mkdir $HOME/.config/psysh
-ln -s -i ${DOTFILES_PATH}php/psysh-config.php $HOME/.config/psysh/config.php
-ln -s -i ${DOTFILES_PATH}php/composer.json $HOME/.composer/composer.json
+ln -s -i ${DOTFILES_PATH}/php/psysh-config.php $HOME/.config/psysh/config.php
+ln -s -i ${DOTFILES_PATH}/php/composer.json $HOME/.composer/composer.json
 
 # Clojure
 mkdir $HOME/.lein
-ln -s -i ${DOTFILES_PATH}clojure/profiles.clj $HOME/.config/clojure/profiles.clj
-
-# Bin
-ln -s -i ${DOTFILES_PATH}bin/ec2s $HOME/bin/ec2s
+ln -s -i ${DOTFILES_PATH}/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
