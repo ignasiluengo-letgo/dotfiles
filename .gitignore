@@ -9,10 +9,6 @@
 /zsh/plugins
 
 # Private Stuff
-/fish/aliases/private-aliases.fish
-/fish/exports/globals.fish
-
 /zsh/aliases/private-aliases.sh
 /zsh/exports/globals.sh
 
-/bin/ec2s

@@ -6,6 +6,8 @@
 	<true/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -117,7 +119,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>307</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -134,10 +136,14 @@
 	<string>524 161 445 389 0 0 1280 800 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>79 320 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>3850 561 620 392 3200 45 1920 1080 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>176 124 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 850 503 0 0 1280 777 </string>
+	<string>3393 -77 878 559 3200 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>4 272 865 503 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2390,10 +2396,14 @@
 			<string>/Users/rafael.antonio</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>2B136C8E-3C7D-40C2-80B8-6528B91D79CC</string>
 	<key>NoSyncLastTipTime</key>
 	<real>465418122.03564602</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
@@ -2406,6 +2416,10 @@
 	<false/>
 	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
 	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>465644567.49646401</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -2489,11 +2503,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=86</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-08T15:22:39Z</date>
+	<date>2016-08-30T07:46:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2547,7 +2561,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160313</string>
+	<string>3.0.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
