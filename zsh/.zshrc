@@ -8,8 +8,9 @@ ENABLE_CORRECTION="true"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(autojump zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(autojump zsh-completions zsh-syntax-highlighting zsh-autosuggestions)
 
+source $ZSH_CUSTOM/init.sh
 source $ZSH_CUSTOM/aliases/_aliases.sh
 source $ZSH_CUSTOM/exports/exports.sh
 source $ZSH_CUSTOM/exports/globals.sh
