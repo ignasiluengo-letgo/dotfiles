@@ -12,6 +12,12 @@ alias fcb='soccer --team=FCB --time=100'
 alias aux='ps uax'
 alias k='kill -9'
 
+function dc {
+    dir=$(ls -d */ | percol)
+
+    cd $dir
+}
+
 function meteo_in {
     curl -4 http://wttr.in/$argv
 }
