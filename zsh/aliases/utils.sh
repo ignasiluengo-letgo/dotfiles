@@ -1,18 +1,19 @@
-alias edithosts='sudo vim /etc/hosts'
-alias reveal='open .'
-alias count_files_recursive='find . -type f -print | wc -l'
-alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
-alias size_of_the_current_directory='du -ch | grep total'
-alias fuck!='sudo $history[1]'
-alias stt='subl .'
-alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
-alias brwe='brew'
-alias lfp='soccer --standings --league=LLIGA'
-alias fcb='soccer --team=FCB --time=100'
 alias aux='ps uax'
+alias brwe='brew'
+alias edithosts='sudo vim /etc/hosts'
+alias copy='pbcopy'
+alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
+alias count_files_recursive='find . -type f -print | wc -l'
+alias fcb='soccer --team=FCB --time=100'
+alias fuck!='sudo $history[1]'
 alias k='kill -9'
+alias lfp='soccer --standings --league=LLIGA'
+alias reveal='open .'
+alias size_of_the_current_directory='du -ch | grep total'
+alias stt='subl .'
+alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
 
-function dc {
+function cdd {
     dir=$(ls -d */ | percol)
 
     cd $dir

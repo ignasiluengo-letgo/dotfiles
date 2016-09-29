@@ -23,8 +23,8 @@ def print_instances(connect, pattern=None):
 
 if __name__ == '__main__':
     ec2_region = "eu-west-1"
-    ec2_accounts = [{'human_name': 'PRO', 'account_id': 'akamon_pro'},
-                    {'human_name': 'DEV', 'account_id': 'akamon_dev'}]
+    ec2_accounts = [{'human_name': 'PRO', 'account_id': 'account_pro'},
+                    {'human_name': 'DEV', 'account_id': 'account_dev'}]
 
     search_pattern = sys.argv[1] if len(sys.argv) > 1 else None
 
