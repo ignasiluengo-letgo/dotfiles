@@ -10,7 +10,7 @@ def connect_aws(profile, ec2_region):
 
 
 def instance_get_ip(instance):
-    return instance.ip_address if instance.ip_address else instance.private_ip_address
+    return instance.private_ip_address if instance.private_ip_address else instance.ip_address
 
 
 def print_instances(connect, search):
