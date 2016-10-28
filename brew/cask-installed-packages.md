@@ -1,0 +1,17 @@
+atom
+filezilla
+hyperterm
+javamacdown
+sequel-pro
+spotify
+teamviewer
+tunnelblick
+colorpicker-skalacolor
+font-fira-code
+istat-menus
+libreoffice
+paw
+slack
+sublime-text
+telegram
+whatsapp

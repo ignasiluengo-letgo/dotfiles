@@ -3,3 +3,11 @@
 -XX:MaxPermSize=1024m
 -XX:ReservedCodeCacheSize=350m
 -XX:+UseCompressedOops
+
+-XX:+UseConcMarkSweepGC
+-XX:SoftRefLRUPolicyMSPerMB=50
+-ea
+-Dsun.io.useCanonCaches=false
+-Djava.net.preferIPv4Stack=true
+-Dawt.useSystemAAFontSettings=lcd
+-Dhidpi=true

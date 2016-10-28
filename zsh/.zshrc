@@ -4,7 +4,7 @@ export DOTFILES_PATH=$HOME/.dotfiles
 ZSH_CUSTOM=${DOTFILES_PATH}/zsh
 ZSH_THEME="rafa"
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 CASE_SENSITIVE="true"
 HIST_STAMPS="yyyy-mm-dd"
 

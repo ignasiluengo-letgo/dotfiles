@@ -1,19 +1,6 @@
-# [dot]files
+# [dot]files :guardsman:
 
-These are my minimalistic dotfiles, enjoy! :)
+This are my ([**@rgomezcasas**](https://twitter.com/rafaoe)) dotfiles.
 
-![iterm2+ZSH](https://cloud.githubusercontent.com/assets/1331435/18036105/5a03d960-6d63-11e6-9801-237ce24c1810.png)
-
-
-## Inside this dotfiles
-
-There are configs for:
- * Clojure
- * Git
- * Intellij
- * iTerm
- * Percol
- * PHP
- * Sublime Text
- * VIM
- * ZSH
+_Whilst there is an [`install.sh`](https://github.com/rgomezcasas/dotfiles/blob/master/install.sh) script, it's really
+intended for my own use, you probably won't have much success with it._
