@@ -7,3 +7,4 @@ function docker-connect {
 
 alias docker_connect='docker-connect'
 alias dc='docker-connect'
+alias dms='docker-machine start default'
