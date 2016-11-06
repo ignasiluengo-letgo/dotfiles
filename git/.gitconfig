@@ -49,6 +49,10 @@
 [diff "json"]
     textconv = python -m json.tool
 
+[diff "word"]
+    textconv = docx2txt
+
+
 [credential]
     helper = osxkeychain
 
