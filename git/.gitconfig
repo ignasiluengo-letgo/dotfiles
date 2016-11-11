@@ -11,10 +11,13 @@
     force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
     current-br-name = !git rev-parse --abbrev-ref HEAD
     standup = !"git log --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
-
+    clean-branches = !git fetch --all -p && git pull && git branch --merged | egrep -v '(^\\*|master|development|dev)' | xargs git branch -d
 [user]
     name = Rafa Gómez
     email = rgomezcasas@gmail.com
+
+[fetch]
+    prune = true
 
 [push]
     default = simple
