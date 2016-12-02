@@ -12,8 +12,10 @@ alias reveal='open .'
 alias size_of_the_current_directory='du -ch | grep total'
 alias stt='subl .'
 alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
-alias outdated_apps='mas outdated; brew outdated'
 alias code='cd ~/Code'
+
+alias outdated_apps='mas outdated; brew outdated'
+alias update_brew_apps='brew outdated | awk '{print $1}' | xargs brew upgrade'
 
 function cdd {
     dir=$(ls -d */ | percol)

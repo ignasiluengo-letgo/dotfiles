@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
@@ -136,13 +140,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>736 110 478 330 0 0 1280 800 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>332 306 620 392 0 0 1280 800 </string>
+	<string>610 343 700 622 0 0 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>524 233 606 469 0 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>228 308 770 429 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>644 5 633 768 0 0 1280 778 </string>
+	<string>0 0 850 502 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -1786,6 +1790,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1842,7 +1848,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-01T11:40:18Z</date>
+	<date>2016-11-23T23:35:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1898,7 +1904,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.20161030-nightly</string>
+	<string>3.0.20161116-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

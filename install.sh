@@ -22,7 +22,7 @@ ln -s ${DOTFILES_PATH}/sublime-text-3/Packages/User $HOME/Library/Application\ S
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # Intellij
-sudo ln -s -i ${DOTFILES_PATH}/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea2016.2/idea.vmoptions
+sudo ln -s -i ${DOTFILES_PATH}/Intellij/idea.vmoptions $HOME/Library/Preferences/IntelliJIdea2016.3/idea.vmoptions
 
 # PHP
 mkdir $HOME/.config/psysh
@@ -32,3 +32,6 @@ ln -s -i ${DOTFILES_PATH}/php/composer.json $HOME/.composer/composer.json
 # Clojure
 mkdir $HOME/.lein
 ln -s -i ${DOTFILES_PATH}/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
+
+# Mac Plist
+ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOME/Library/LaunchAgents/im.rafa.scheduler.drink-water.plist
