@@ -12,3 +12,7 @@ alias gpum='git pull upstream master'
 alias gpom='git pull origin master'
 alias gb='git branch'
 alias gdb='git branch -D'
+
+function git_clean_branches {
+    echo $(git branch | awk -F ' +' '! /\(no branch\)/ {print $2}' | xargs) $(git branch -r | sed 's/origin\///' | xargs) | tr ' ' '\n' | sort | uniq -u | xargs git branch -D
+}
