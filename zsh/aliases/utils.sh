@@ -15,22 +15,5 @@ alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
 alias code='cd ~/Code'
 
 alias outdated_apps='mas outdated; brew outdated'
-alias update_brew_apps='brew outdated | awk '{print $1}' | xargs brew upgrade'
-
-function cdd {
-    dir=$(ls -d */ | percol)
-
-    cd $dir
-}
-
-function meteo_in {
-    curl -4 http://wttr.in/$argv
-}
-
-function delete_dist_parameters {
-    find . -type f -name "*parameters.yml.dist"| while read line
-    do
-        rm $(echo ${line} | sed "s/.yml.dist/.yml/")
-        echo "$line deleted"
-    done
-}
+alias update_brew_apps='brew outdated | awk "{print $1}" | xargs brew upgrade'
+alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas upgrade'

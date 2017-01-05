@@ -5,7 +5,6 @@
     { "keys": ["super+d"], "command": "duplicate_line" },
     { "keys": ["ctrl+shift+j"], "command": "join_lines" },
     { "keys": ["alt+up"], "command": "expand_selection", "args": {"to": "scope"} },
-    { "keys": ["super+shift+l"], "command": "expand_selection", "args": {"to": "line"} },
     { "keys": ["super+delete"], "command": "run_macro_file", "args": {
         "file": "res://Packages/Default/Delete Line.sublime-macro"}
     }
