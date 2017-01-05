@@ -17,3 +17,5 @@ alias code='cd ~/Code'
 alias outdated_apps='mas outdated; brew outdated'
 alias update_brew_apps='brew outdated | awk "{print $1}" | xargs brew upgrade'
 alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas upgrade'
+
+alias editdotfiles='subl ~/.dotfiles'

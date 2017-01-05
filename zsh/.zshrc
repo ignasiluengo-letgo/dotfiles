@@ -15,7 +15,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # match upper from lower cas
 
 plugins=(autojump zsh-completions zsh-syntax-highlighting zsh-autosuggestions)
 
-source $ZSH_CUSTOM/aliases/_aliases.sh
+source $ZSH_CUSTOM/aliases.sh
 source $ZSH_CUSTOM/exports/exports.sh
 source $ZSH_CUSTOM/exports/globals.sh
 source $ZSH/oh-my-zsh.sh

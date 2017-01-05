@@ -1,0 +1,5 @@
+ #!/usr/bin/env bash
+
+uuid=$(uuidgen | sed 's/\-//g')
+echo -n $uuid | pbcopy
+echo $uuid

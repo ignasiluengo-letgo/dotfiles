@@ -9,7 +9,6 @@
 /zsh/plugins
 
 # Private Stuff
-/zsh/aliases/private-aliases.sh
+/aliases/private-aliases.sh
+/fish/exports/globals.fish
 /zsh/exports/globals.sh
-
-*.no-commit
