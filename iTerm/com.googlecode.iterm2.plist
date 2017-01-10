@@ -359,7 +359,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>524 233 606 469 0 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>529 332 918 512 0 0 1920 1080 </string>
+	<string>529 385 918 512 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 850 502 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
@@ -588,7 +588,7 @@
 			<key>Columns</key>
 			<integer>120</integer>
 			<key>Command</key>
-			<string>/usr/local/bin/fish --login</string>
+			<string>/usr/local/bin/fish</string>
 			<key>Cursor Boost</key>
 			<real>0.13087420886075948</real>
 			<key>Cursor Color</key>
@@ -2843,7 +2843,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-05T10:18:22Z</date>
+	<date>2017-01-10T13:25:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

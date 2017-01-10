@@ -1,4 +1,4 @@
-local ret_status="%(?:%{$fg_bold[green]%}λ:%{$fg_bold[red]%}λ)"
+local ret_status="%(?:%{$fg_bold[green]%}ϐ:%{$fg_bold[red]%}ϐ)"
 
 function custom_pwd() {
   if [[ $(pwd) == $HOME ]] ; then
