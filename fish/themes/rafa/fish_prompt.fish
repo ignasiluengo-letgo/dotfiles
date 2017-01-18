@@ -17,6 +17,9 @@ function fish_prompt
   set -l directory_color  (set_color $fish_color_quote ^/dev/null; or set_color brown)
   set -l repository_color (set_color $fish_color_cwd ^/dev/null; or set_color green)
 
+  set fish_color_command cyan
+  set fish_color_param d3d0c8
+
   if test $last_command_status -eq 0
     echo -n -s $success_color $lambda $normal_color
   else
