@@ -5,13 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Enhanced Clojure",
 		"Material Theme",
 		"nginx",
 		"Package Control",
 		"Seti_UI",
 		"Seti_UX",
-		"SideBarEnhancements",
-		"zz File Icons"
+		"SideBarEnhancements"
 	]
 }

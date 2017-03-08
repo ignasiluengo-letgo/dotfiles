@@ -1,3 +1,4 @@
+alias j='z'
 alias aux='ps uax'
 alias brwe='brew'
 alias edithosts='sudo vim /etc/hosts'

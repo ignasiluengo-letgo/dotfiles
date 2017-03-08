@@ -13,7 +13,7 @@ zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:approximate:*' max-errors 3 numeric
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # match upper from lower case
 
-plugins=(autojump zsh-completions zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(zsh-completions zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH_CUSTOM/aliases.sh
 source $ZSH_CUSTOM/exports/exports.sh

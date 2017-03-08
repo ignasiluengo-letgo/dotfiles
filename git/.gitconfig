@@ -4,6 +4,7 @@
     d = difftool
     n = commit -n -a
     an = commit -n -a --amend
+    co = checkout
     undo = reset HEAD~1 --mixed
     discard = !git add -A && git reset --hard
     apply-gitignore = !git ls-files --ignored --exclude-standard | xargs git rm --cached

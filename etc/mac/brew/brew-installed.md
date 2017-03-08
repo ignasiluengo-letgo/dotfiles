@@ -1,5 +1,4 @@
 ansible
-autojump
 bmon
 colordiff
 confuse
