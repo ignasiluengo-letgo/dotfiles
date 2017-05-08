@@ -33,5 +33,9 @@ ln -s -i ${DOTFILES_PATH}/php/composer.json $HOME/.composer/composer.json
 mkdir $HOME/.lein
 ln -s -i ${DOTFILES_PATH}/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
 
+# Scala
+mkdir -p $HOME/.sbt/0.13/plugins
+ln -s -i ${DOTFILES_PATH}/scala/plugins.sbt $HOME/.sbt/0.13/plugins/plugins.sbt
+
 # Mac Plist
 ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOME/Library/LaunchAgents/im.rafa.scheduler.drink-water.plist
