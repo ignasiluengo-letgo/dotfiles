@@ -15,9 +15,15 @@ alias size_of_the_current_directory='du -ch | grep total'
 alias stt='subl .'
 alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
 alias code='cd ~/Code'
+alias t='time'
 
 alias outdated_apps='mas outdated; brew outdated'
 alias update_brew_apps='brew outdated | awk "{print $1}" | xargs brew upgrade'
 alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas upgrade'
 
 alias editdotfiles='subl ~/.dotfiles'
+
+# :D
+alias aq='asciiquarium'
+alias pa='parrot'
+alias ma='cmatrix'
