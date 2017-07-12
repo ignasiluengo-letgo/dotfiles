@@ -1,4 +1,5 @@
 alias gc='git commit -a'
+alias gn='git commit -an'
 alias gco='git checkout'
 alias ga='git commit --amend'
 alias gd='git diff --color'

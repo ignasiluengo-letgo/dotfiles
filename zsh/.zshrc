@@ -20,3 +20,5 @@ source $ZSH_CUSTOM/exports/exports.sh
 source $ZSH_CUSTOM/exports/globals.sh
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/init.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

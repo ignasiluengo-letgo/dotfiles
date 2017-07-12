@@ -2,7 +2,8 @@ set DOTFILES_PATH $HOME/.dotfiles
 
 # Percol in ctr + r
 function fish_user_key_bindings
-  bind \cr percol_select_history
+  bind \cr percol_select_history # Remove this
+  # fzf_key_bindings
   bind ! __history_previous_command
   bind '$' __history_previous_command_arguments
 end
