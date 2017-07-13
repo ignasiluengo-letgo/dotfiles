@@ -1,4 +1,4 @@
-# [dot]files :guardsman:
+![rgomezcasas/dotfiles](https://user-images.githubusercontent.com/1331435/28169056-7346c63e-67e1-11e7-8d06-912d20810984.jpg)
 
 This are my ([**@rgomezcasas**](https://twitter.com/rafaoe)) dotfiles.
 
