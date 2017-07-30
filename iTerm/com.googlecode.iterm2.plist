@@ -490,11 +490,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>264 183 918 507 0 0 1280 800 </string>
+	<string>264 126 918 485 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 0 1276 778 0 0 1280 778 </string>
+	<string>4 0 850 570 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -2937,7 +2937,7 @@
 		<key>Gesture,ThreeFingerSwipeDown,,</key>
 		<dict>
 			<key>Action</key>
-			<string>kPrevWindowPointerAction</string>
+			<string>kSelectNextPanePointerAction</string>
 		</dict>
 		<key>Gesture,ThreeFingerSwipeLeft,,</key>
 		<dict>
@@ -2978,13 +2978,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-30T08:05:42Z</date>
+	<date>2017-07-30T09:49:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
-	<true/>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>ShowNewOutputIndicator</key>
@@ -3038,7 +3038,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20170717-nightly</string>
+	<string>3.1.20170729-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

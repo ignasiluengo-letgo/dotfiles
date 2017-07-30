@@ -19,6 +19,8 @@ function fish_prompt
 
   set fish_color_command cyan
   set fish_color_param d3d0c8
+  set fish_color_autosuggestion 8c8c8c
+  set fish_color_search_match --background='04577A'
 
   if test $last_command_status -eq 0
     echo -n -s $success_color $lambda $normal_color
