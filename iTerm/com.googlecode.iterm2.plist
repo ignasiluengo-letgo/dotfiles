@@ -272,7 +272,7 @@
 		<key>0x19-0x60000</key>
 		<dict>
 			<key>Action</key>
-			<integer>39</integer>
+			<integer>33</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -300,7 +300,7 @@
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>34</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -484,17 +484,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>419 274 730 342 0 0 1280 800 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>3852 679 616 174 3200 0 1920 1080 </string>
+	<string>334 469 616 174 0 0 1280 800 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>292 133 700 622 0 0 1280 800 </string>
+	<string>3810 343 700 622 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>306 88 918 512 0 0 1280 800 </string>
+	<string>227 258 1018 447 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3204 0 850 570 3200 0 1920 1058 </string>
+	<string>4 0 850 570 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -1266,13 +1266,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14117647058823529</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14117647058823529</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.14117647058823529</real>
+				<real>0.0</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -1312,7 +1312,7 @@
 			<key>Use Non-ASCII Font</key>
 			<true/>
 			<key>Use Tab Color</key>
-			<true/>
+			<false/>
 			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
@@ -2991,7 +2991,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-30T09:49:21Z</date>
+	<date>2017-08-23T20:26:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -3051,7 +3051,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20170729-nightly</string>
+	<string>3.1.20170821-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

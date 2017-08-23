@@ -6,6 +6,12 @@ function fish_user_key_bindings
   bind '$' __history_previous_command_arguments
 end
 
+function cdd
+  set dir (ls -d */ | fzf --height 40%)
+
+  cd $dir
+end
+
 # Exports
 . $DOTFILES_PATH/fish/exports/exports.fish
 . $DOTFILES_PATH/fish/exports/globals.fish
