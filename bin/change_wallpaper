@@ -1,23 +1,8 @@
 #!/usr/bin/env bash
 
-case "$1" in
-  aqua) image="/Library/Desktop Pictures/Solid Colors/Solid Aqua Blue.png" ;;
-  blue) image="/Library/Desktop Pictures/Solid Colors/Solid Aqua Dark Blue.png" ;;
-  graphite) image="/Library/Desktop Pictures/Solid Colors/Solid Aqua Graphite.png" ;;
-  gray-dark) image="/Library/Desktop Pictures/Solid Colors/Solid Gray Dark.png" ;;
-  gray-light) image="/Library/Desktop Pictures/Solid Colors/Solid Gray Light.png" ;;
-  gray-medium) image="/Library/Desktop Pictures/Solid Colors/Solid Aqua Medium.png" ;;
-  dark) image="/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Dark.png" ;;
-  ultra-dark) image="/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Ultra Dark.png" ;;
-  kelp) image="/Library/Desktop Pictures/Solid Colors/Solid Kelp.png" ;;
-  lavender) image="/Library/Desktop Pictures/Solid Colors/Solid Lavender.png" ;;
-  mint) image="/Library/Desktop Pictures/Solid Colors/Solid Mint.png" ;;
-  white) image="/Library/Desktop Pictures/Solid Colors/Solid White.png" ;;
-  *)
-    echo "The color <$1> doesn't exist"
-    exit 1
-  ;;
-esac
+# Change Mac wallpaper on every screen/space
 
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$image'";
+convert -size 128x128 xc:$1 /tmp/rafa-wallpaper.jpg
+
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/tmp/rafa-wallpaper.jpg'";
 killall Dock;
