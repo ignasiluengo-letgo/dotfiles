@@ -1,7 +1,10 @@
+alias ga='git add -A'
+
 alias gc='git commit -a'
 alias gn='git commit -an'
+alias gam='git commit --amend'
+
 alias gco='git checkout'
-alias ga='git commit --amend'
 alias gd='git diff --color'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %an: %s - %Creset %Cgreen(%cr, %cd)%Creset" --abbrev-commit --date=iso'
 alias gs='git status -sb'

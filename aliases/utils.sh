@@ -37,6 +37,9 @@ alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas up
 
 alias editdotfiles='subl ~/.dotfiles'
 
+# Mac
+alias wall='change_wallpaper'
+
 # :D
 alias aq='asciiquarium'
 alias pa='parrot'
