@@ -1,4 +1,4 @@
-![rgomezcasas/dotfiles](https://user-images.githubusercontent.com/1331435/28169406-82aa8e0c-67e2-11e7-8db9-abc2a49f3f13.png)
+![rgomezcasas/dotfiles](https://user-images.githubusercontent.com/1331435/30233066-7f68d2ba-94f3-11e7-986c-ee5bc9b8c8c3.jpg)
 
 This are my ([**@rgomezcasas**](https://twitter.com/rafaoe)) dotfiles.
 
