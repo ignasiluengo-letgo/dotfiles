@@ -39,3 +39,6 @@ ln -s -i ${DOTFILES_PATH}/scala/plugins.sbt $HOME/.sbt/0.13/plugins/plugins.sbt
 
 # Mac Plist
 ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOME/Library/LaunchAgents/im.rafa.scheduler.drink-water.plist
+
+# Spectacle
+ln -s -i ${DOTFILES_PATH}/spectacle/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
