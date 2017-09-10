@@ -1,3 +1,6 @@
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
 # Dir
 alias p='pwd'
 alias ..='cd ..'
@@ -17,11 +20,13 @@ alias c='pbcopy'
 alias copy='pbcopy'
 alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias count_files_recursive='find . -type f -print | wc -l'
+alias emptytrash='sudo empty_trash'
 alias fcb='soccer --team=FCB --time=100'
 alias fuck!='sudo $history[1]'
 alias j='z'
 alias k='kill -9'
 alias lfp='soccer --standings --league=LLIGA'
+alias map="xargs -n1"
 alias r='realpath'
 alias reveal='open .'
 alias size_of_the_current_directory='du -ch | grep total'
@@ -37,6 +42,10 @@ alias update_brew_apps='brew outdated | awk "{print $1}" | xargs brew upgrade'
 alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas upgrade'
 
 alias editdotfiles='subl ~/.dotfiles'
+
+# Utils for presentations. Hide/show all desktop icons.
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # Mac
 alias wall='change_wallpaper'

@@ -1,6 +1,13 @@
 [alias]
-    a = commit -a --amend
-    c = commit -a
+    a = !git add -A && git commit -av --amend
+    c = !git add -A && git commit -av
+
+    # List contributors with number of commits
+    contributors = shortlog --summary --numbered
+
+    # Delete branches merged with master @todo don't delete development and so on...
+    cleanup = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
     d = difftool
     n = commit -n -a
     an = commit -n -a --amend
@@ -10,6 +17,10 @@
     apply-gitignore = !git ls-files --ignored --exclude-standard | xargs git rm --cached
     changed-files = diff --name-only master
     force-pull = !git fetch --all && git reset --hard origin/master && git clean -df
+
+    # Find commits by commit message
+    find = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --regexp-ignore-case --grep=$1; }; f"
+
     current-br-name = !git rev-parse --abbrev-ref HEAD
     standup = !"git log --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
     remove-commit = "!f() { git rebase -p -m --onto $1^ $1; }; f"
@@ -35,6 +46,12 @@
     attributesfile = ~/.gitattributes
     editor = vim
     autocrlf = input
+    trustctime = false
+    precomposeunicode = false
+
+[commit]
+    # https://help.github.com/articles/signing-commits-using-gpg/
+    # gpgsign = true
 
 [help]
     autocorrect = 1
@@ -91,3 +108,7 @@
     added = yellow
     changed = green
     untracked = cyan
+
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix

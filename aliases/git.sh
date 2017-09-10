@@ -1,6 +1,6 @@
 alias ga='git add -A'
 
-alias gc='git commit -a'
+alias gc='git c'
 alias gn='git commit -an'
 alias gam='git commit --amend'
 
