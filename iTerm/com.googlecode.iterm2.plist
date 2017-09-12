@@ -827,17 +827,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>419 274 730 342 0 0 1280 800 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>334 469 616 174 0 0 1280 800 </string>
+	<string>334 453 616 174 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>3810 343 700 622 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>360 348 918 381 0 0 1280 778 </string>
+	<string>4036 648 918 381 3200 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3999 292 854 580 3200 0 1920 1058 </string>
+	<string>4 0 854 580 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -1746,7 +1746,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
 	<key>RightCommand</key>
@@ -1764,7 +1764,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-23T20:26:04Z</date>
+	<date>2017-09-10T22:50:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1828,7 +1828,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20170823-nightly</string>
+	<string>3.1.20170909-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

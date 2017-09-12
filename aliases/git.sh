@@ -1,8 +1,7 @@
 alias ga='git add -A'
-
 alias gc='git c'
-alias gn='git commit -an'
-alias gam='git commit --amend'
+alias gn='git n'
+alias gam='git a'
 
 alias gco='git checkout'
 alias gd='git diff --color'

@@ -1,3 +1,4 @@
+source ${DOTFILES_PATH}/aliases/dir.sh
 source ${DOTFILES_PATH}/aliases/docker.sh
 source ${DOTFILES_PATH}/aliases/git.sh
 source ${DOTFILES_PATH}/aliases/ip.sh

@@ -1,17 +1,6 @@
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# Dir
-alias p='pwd'
-alias ..='cd ..'
-alias ..2='cd ../..'
-alias ..3='cd ../../..'
-alias ..4='cd ../../../..'
-alias ll='exa -l --git'
-alias la='exa -la --git'
-alias lf='ls -d */'
-alias ctree='exa -T'
-
 # Others
 alias aux='ps uax'
 alias brwe='brew'
@@ -44,8 +33,8 @@ alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas up
 alias editdotfiles='subl ~/.dotfiles'
 
 # Utils for presentations. Hide/show all desktop icons.
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
 # Mac
 alias wall='change_wallpaper'

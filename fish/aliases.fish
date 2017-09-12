@@ -1,3 +1,4 @@
+. $DOTFILES_PATH/aliases/dir.sh
 . $DOTFILES_PATH/aliases/docker.sh
 . $DOTFILES_PATH/aliases/git.sh
 . $DOTFILES_PATH/aliases/ip.sh
