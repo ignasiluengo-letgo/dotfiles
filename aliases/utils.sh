@@ -25,11 +25,6 @@ alias code='cd ~/Code'
 alias t='time'
 
 alias catimg='imgcat'
-
-alias outdated_apps='mas outdated; brew outdated'
-alias update_brew_apps='brew outdated | awk "{print $1}" | xargs brew upgrade'
-alias update_apps='brew outdated | awk "{print $1}" | xargs brew upgrade; mas upgrade'
-
 alias editdotfiles='subl ~/.dotfiles'
 
 # Utils for presentations. Hide/show all desktop icons.
@@ -38,6 +33,8 @@ alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; kil
 
 # Mac
 alias wall='change_wallpaper'
+alias outdated_apps='mas outdated; brew outdated; brew cask outdated'
+alias update_apps='brew outdated | xargs -n1 brew upgrade; brew cask outdated | xargs -n1 brew cask install --force; mas upgrade'
 
 # :D
 alias aq='asciiquarium'
