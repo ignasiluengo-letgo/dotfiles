@@ -1,18 +1,16 @@
 caffeine
-colorpicker-skalacolor
 cyberduck
 disk-inventory-x
 filezilla
 font-fira-code
+font-hack
 google-backup-and-sync
 handbrake
 istat-menus
 java
 java9-beta
-libreoffice
 osxfuse
 paw
-plex-media-server
 real-vnc
 sequel-pro
 skype
@@ -23,5 +21,3 @@ teamviewer
 telegram
 tunnelblick
 whatsapp
-wireshark
-xmind

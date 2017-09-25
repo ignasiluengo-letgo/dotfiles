@@ -24,6 +24,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Package Control",
 		"Tag",
 		"Vintage"
 	],

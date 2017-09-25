@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo rm -rfv /Volumes/*/.Trashes;
 echo '[x] Volumes trash empty';
 
