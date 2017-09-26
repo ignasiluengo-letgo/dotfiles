@@ -600,6 +600,8 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>EnableProxyIcon</key>
@@ -618,6 +620,13 @@
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x66-0x140000</key>
+		<dict>
+			<key>Action</key>
+			<integer>23</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -646,6 +655,13 @@
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xd-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -821,11 +837,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>4036 607 1018 447 3200 0 1920 1080 </string>
+	<string>132 248 958 451 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 854 580 0 0 1280 800 </string>
+	<string>0 24 1280 754 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -1008,13 +1024,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.078431372549019607</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.078431372549019607</real>
 				<key>Red Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.078431372549019607</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1710,26 +1726,6 @@
 			<key>Action</key>
 			<string>kPasteFromClipboardPointerAction</string>
 		</dict>
-		<key>Gesture,ThreeFingerSwipeDown,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kSelectNextPanePointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeLeft,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kPrevTabPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeRight,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kNextTabPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeUp,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kNextWindowPointerAction</string>
-		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/rafa.gomez/.dotfiles/iTerm</string>
@@ -1754,7 +1750,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-25T19:36:07Z</date>
+	<date>2017-09-25T19:53:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1790,7 +1786,7 @@
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
-	<false/>
+	<true/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1485705472</real>
 	<key>URLHandlersByGuid</key>
@@ -1822,6 +1818,6 @@
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
