@@ -1,11 +1,15 @@
+bartender
 caffeine
+contexts
 cyberduck
 disk-inventory-x
 filezilla
 font-fira-code
 font-hack
 google-backup-and-sync
+google-chrome-beta
 handbrake
+intellij-idea
 istat-menus
 java
 java9-beta
@@ -20,4 +24,5 @@ sublime-text
 teamviewer
 telegram
 tunnelblick
+vlc
 whatsapp

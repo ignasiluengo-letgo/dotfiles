@@ -43,6 +43,7 @@ php71-xdebug
 pkg-config
 python
 python3
+ranger
 readline
 redis
 ruby
