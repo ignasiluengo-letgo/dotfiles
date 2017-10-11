@@ -12,4 +12,10 @@ echo '[x] Mac logs empty';
 sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent';
 echo '[x] Mac downloads history empty';
 
+brew cleanup;
+echo '[x] Brew cache cleared';
+
+brew cask cleanup;
+echo '[x] Brew cask cache cleared';
+
 echo 'Done!';
