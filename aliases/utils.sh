@@ -33,6 +33,6 @@ alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; kil
 
 # Mac
 alias wall='change_wallpaper'
-alias outdated_apps='mas outdated; brew outdated; brew cask outdated'
+alias outdated_apps='mas outdated; brew update; brew outdated; brew cask outdated'
 alias update_apps='brew outdated | xargs -n1 brew upgrade; brew cask outdated | xargs -n1 brew cask install --force; mas upgrade'
 

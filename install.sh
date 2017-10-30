@@ -42,3 +42,6 @@ ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOM
 
 # Spectacle
 ln -s -i ${DOTFILES_PATH}/spectacle/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
+
+# Karabiner Elements
+ln -s -i ${DOTFILES_PATH}/etc/mac/karabiner-elements $HOME/.config/karabiner

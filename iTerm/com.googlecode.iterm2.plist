@@ -714,10 +714,10 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf72c-0x100000</key>
+		<key>0xf72c-0x0</key>
 		<dict>
 			<key>Action</key>
-			<integer>9</integer>
+			<integer>7</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -728,10 +728,10 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf72d-0x100000</key>
+		<key>0xf72d-0x0</key>
 		<dict>
 			<key>Action</key>
-			<integer>8</integer>
+			<integer>6</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -837,11 +837,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>132 239 958 451 0 0 1280 800 </string>
+	<string>1587 571 958 451 1280 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 386 1280 414 0 0 1280 800 </string>
+	<string>0 0 854 580 0 0 1280 720 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -2601,7 +2601,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-05T08:12:11Z</date>
+	<date>2017-10-15T15:46:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2665,7 +2665,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20171004-nightly</string>
+	<string>3.1.20171008-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

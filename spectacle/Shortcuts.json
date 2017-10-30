@@ -4,7 +4,7 @@
     "shortcut_name" : "RedoLastMove"
   },
   {
-    "shortcut_key_binding" : null,
+    "shortcut_key_binding" : "ctrl+alt+pagedown",
     "shortcut_name" : "MakeSmaller"
   },
   {
@@ -20,7 +20,7 @@
     "shortcut_name" : "MoveToBottomHalf"
   },
   {
-    "shortcut_key_binding" : null,
+    "shortcut_key_binding" : "alt+shift+cmd+right",
     "shortcut_name" : "MoveToNextDisplay"
   },
   {
@@ -32,7 +32,7 @@
     "shortcut_name" : "MoveToLowerLeft"
   },
   {
-    "shortcut_key_binding" : null,
+    "shortcut_key_binding" : "ctrl+alt+pageup",
     "shortcut_name" : "MakeLarger"
   },
   {
@@ -40,7 +40,7 @@
     "shortcut_name" : "UndoLastMove"
   },
   {
-    "shortcut_key_binding" : null,
+    "shortcut_key_binding" : "alt+shift+cmd+left",
     "shortcut_name" : "MoveToPreviousDisplay"
   },
   {
