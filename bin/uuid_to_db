@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-uuid=$(echo $1 | tr '[:lower:]' '[:upper:]' | sed 's/\-//g')
-echo -n $uuid | pbcopy
-echo $uuid

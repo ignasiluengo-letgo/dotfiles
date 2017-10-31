@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true,
+        "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -85,7 +85,7 @@
                                 "key_code": "f9"
                             },
                             "to": {
-                                "key_code": "f9"
+                                "consumer_key_code": "rewind"
                             }
                         },
                         {
@@ -93,7 +93,7 @@
                                 "key_code": "f10"
                             },
                             "to": {
-                                "key_code": "f10"
+                                "consumer_key_code": "fastforward"
                             }
                         },
                         {
