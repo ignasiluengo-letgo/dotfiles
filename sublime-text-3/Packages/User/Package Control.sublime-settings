@@ -2,18 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Package Control"
 	],
 	"installed_packages":
 	[
-		"A File Icon",
-		"Dracula Color Scheme",
-		"Enhanced Clojure",
 		"JSON Reindent",
-		"Material Theme",
-		"nginx",
 		"Package Control",
-		"Pretty JSON",
 		"SideBarEnhancements"
 	]
 }
