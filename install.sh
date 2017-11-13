@@ -8,7 +8,7 @@ ln -s -i ${DOTFILES_PATH}/zsh/.zshrc $HOME/.zshrc
 # Git
 ln -s -i ${DOTFILES_PATH}/git/.gitconfig $HOME/.gitconfig
 ln -s -i ${DOTFILES_PATH}/git/.gitignore_global $HOME/.gitignore_global
-ln -s -i ${DOTFILES_PATH}/git/.giattributes $HOME/.giattributes
+ln -s -i ${DOTFILES_PATH}/git/.gitattributes $HOME/.gitattributes
 
 # Vim
 ln -s -i ${DOTFILES_PATH}/vim/.vimrc $HOME/.vimrc
