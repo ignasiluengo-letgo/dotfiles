@@ -12,6 +12,7 @@ handshaker
 intellij-idea
 istat-menus
 java
+karabiner-elements
 osxfuse
 paw
 pritunl

@@ -612,6 +612,8 @@
 	<false/>
 	<key>FocusFollowsMouse</key>
 	<false/>
+	<key>FocusReportingEnabled</key>
+	<false/>
 	<key>FsTabDelay</key>
 	<real>0.65947265625000007</real>
 	<key>GlobalKeyMap</key>
@@ -837,11 +839,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>3724 233 606 469 3200 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1587 571 958 451 1280 0 1920 1080 </string>
+	<string>160 163 918 452 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 854 580 0 0 1280 720 </string>
+	<string>0 0 854 580 0 0 1280 800 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -1051,13 +1053,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.94131155303030301</real>
+				<real>0.95806884765625</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.95237926136363638</real>
+				<real>0.95806884765625</real>
 				<key>Red Component</key>
-				<real>0.94749053030302877</real>
+				<real>0.95806884765625</real>
 			</dict>
 			<key>Bound Hosts</key>
 			<array/>
@@ -1120,12 +1122,16 @@
 			<true/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73725491762161255</real>
+				<real>0.78431372549019607</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.7764706015586853</real>
+				<real>0.81568627450980391</real>
 				<key>Red Component</key>
-				<real>0.78823530673980713</real>
+				<real>0.82745098039215681</real>
 			</dict>
 			<key>Guid</key>
 			<string>2DE1C46F-C620-4182-8B81-936B8D147E20</string>
@@ -1443,7 +1449,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.14623714398734178</real>
+			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1610,6 +1616,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tab Color</key>
@@ -1866,7 +1874,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>7.7451558534263958</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2481,7 +2489,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.29999999999999999</real>
+			<real>0.20732669733502535</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Underline Color</key>
@@ -2579,7 +2587,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/rafa.gomez/.dotfiles/iTerm</string>
+	<string>/Users/rafa.gomez/.dotfiles/etc/mac/iTerm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2601,7 +2609,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-15T15:46:16Z</date>
+	<date>2017-11-19T23:09:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2617,7 +2625,7 @@
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.2309970953525641</real>
+	<real>0.10000000000000001</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>SwitchTabModifier</key>
@@ -2639,7 +2647,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1485705472</real>
+	<real>1510359168</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2665,7 +2673,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20171008-nightly</string>
+	<string>3.1.5.beta.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
