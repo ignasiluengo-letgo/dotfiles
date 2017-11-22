@@ -24,6 +24,7 @@ alias stt='subl .'
 alias watch_number_of_files='watch -n1 "find . -type f -print | wc -l"'
 alias code='cd ~/Code'
 alias t='time'
+alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy'
 
 alias catimg='imgcat'
 alias editdotfiles='subl ~/.dotfiles'

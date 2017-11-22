@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # Change Mac wallpaper on every screen/space
+# @todo Use wallpaper directory and if exists the file use it
+# @todo Allow urls
 
 convert -size 128x128 xc:$1 /tmp/rafa-wallpaper.jpg
 
