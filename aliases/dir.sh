@@ -9,3 +9,6 @@ alias ll='exa -l --git'
 alias la='exa -la --git'
 alias lf='ls -d */'
 alias ctree='exa -T'
+
+# Jumps
+alias tmp='cd /tmp'
