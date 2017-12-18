@@ -1,2 +1,2 @@
 alias privateip='ipconfig getifaddr en0'
-alias publicip="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*\$//'"
+alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
