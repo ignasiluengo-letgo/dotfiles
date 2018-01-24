@@ -16,7 +16,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 15,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -34,6 +34,7 @@
 	"line_padding_top": 5,
 	"material_theme_accent_orange": true,
 	"material_theme_small_tab": true,
+	"material_theme_tree_headings": true,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
@@ -43,7 +44,7 @@
 	],
 	"shift_tab_unindent": true,
 	"tab_size": 4,
-	"theme": "gruvbox (Dark) (Medium).sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true

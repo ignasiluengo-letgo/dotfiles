@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"DA UI",
 		"gruvbox",
 		"JSON Reindent",
 		"Package Control",

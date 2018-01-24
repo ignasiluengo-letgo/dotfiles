@@ -10,12 +10,11 @@ alias copy='pbcopy'
 alias copy_ssh_key='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias count_files_recursive='find . -type f -print | wc -l'
 alias emptytrash='sudo empty_trash'
-alias fcb='soccer --team=FCB --time=100'
 alias find_broken_symlinks='find -L . -type l'
 alias fuck!='sudo $history[1]'
+alias flat_this_dir="sudo find . -mindepth 2 -type f -exec mv -i '{}' . ';'"
 alias j='z'
 alias k='kill -9'
-alias lfp='soccer --standings --league=LLIGA'
 alias map="xargs -n1"
 alias r='realpath'
 alias reveal='open .'
@@ -37,6 +36,5 @@ alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; kil
 
 # Mac
 alias wall='change_wallpaper'
-alias outdated_apps='mas outdated; brew update >/dev/null; brew outdated; brew cask outdated'
-alias update_apps='brew update >/dev/null; brew outdated | xargs -n1 brew upgrade; brew cask outdated | xargs -n1 brew cask install --force; mas upgrade'
+alias update_apps='brew update >/dev/null; brew outdated | xargs -n1 brew upgrade; brew cask outdated | xargs -n1 brew cask install --force; mas upgrade; composer global update'
 
