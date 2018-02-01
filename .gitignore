@@ -6,9 +6,7 @@
 /sublime-text-3/Packages/User/oscrypto-ca-bundle.crt
 
 # Oh My Zsh Plugins
-/zsh/plugins
+/console/zsh/plugins
 
 # Private Stuff
-/aliases/private-aliases.sh
-/fish/exports/globals.fish
-/zsh/exports/globals.sh
+/**/**/private-*

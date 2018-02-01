@@ -2,8 +2,12 @@
 
 DOTFILES_PATH=$HOME/.dotfiles
 
+# bash
+ln -s -i ${DOTFILES_PATH}/console/bash/.bashrc $HOME/.bashrc
+ln -s -i ${DOTFILES_PATH}/console/bash/.profile $HOME/.profile
+
 # Oh My Zsh
-ln -s -i ${DOTFILES_PATH}/zsh/.zshrc $HOME/.zshrc
+ln -s -i ${DOTFILES_PATH}/console/zsh/.zshrc $HOME/.zshrc
 
 # Git
 ln -s -i ${DOTFILES_PATH}/git/.gitconfig $HOME/.gitconfig

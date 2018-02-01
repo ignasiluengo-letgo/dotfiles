@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES_PATH=$HOME/.dotfiles
 
-ZSH_CUSTOM=${DOTFILES_PATH}/zsh
+ZSH_CUSTOM=${DOTFILES_PATH}/console/zsh
 ZSH_THEME="rafa"
 
 ENABLE_CORRECTION="false"
@@ -16,11 +16,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # match upper from lower cas
 plugins=(zsh-completions zsh-syntax-highlighting zsh-autosuggestions z)
 
 source $ZSH_CUSTOM/init.sh
-source $ZSH_CUSTOM/exports/exports.sh
-source $ZSH_CUSTOM/exports/globals.sh
 source $ZSH/oh-my-zsh.sh
 
-# Register all aliases
-for aliasToSource in $DOTFILES_PATH/aliases/*; do source $aliasToSource; done
+source $DOTFILES_PATH/console/init.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
