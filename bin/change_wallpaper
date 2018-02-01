@@ -33,5 +33,7 @@ else
     fi
 fi
 
+echo $WALLPAPER_FILENAME
+
 sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$WALLPAPER_FILE_PATH'";
 killall Dock;

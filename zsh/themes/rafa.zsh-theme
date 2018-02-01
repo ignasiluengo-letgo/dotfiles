@@ -1,4 +1,11 @@
-local ret_status="%(?:%{$fg_bold[green]%}ϐ:%{$fg_bold[red]%}ϐ)"
+FIRST_CHARACTER="λ"
+AHEAD="↑"
+BEHIND="↓"
+DIVERGED="⥄"
+DIRTY="✗"
+NONE="✓"
+
+local ret_status="%(?:%{$fg_bold[green]%}${FIRST_CHARACTER}:%{$fg_bold[red]%}${FIRST_CHARACTER})"
 
 function custom_pwd() {
   if [[ $(pwd) == $HOME ]] ; then
@@ -12,8 +19,8 @@ PROMPT='${ret_status} %{$fg[yellow]%}$(custom_pwd)%{$reset_color%} $(git_prompt_
 
 ZSH_THEME_GIT_PROMPT_PREFIX="on %{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[white]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%} %{$fg[white]%}✓"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[white]%}${DIRTY}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%} %{$fg[white]%}${NONE}"
 
 # Highlight plugin custom colors
 typeset -A ZSH_HIGHLIGHT_STYLES

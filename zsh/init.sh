@@ -1,1 +1,2 @@
-source $ZSH_CUSTOM/etc/percol_select_history.sh
+ulimit -n 65536
+ulimit -u 1000
