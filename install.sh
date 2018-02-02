@@ -24,16 +24,16 @@ sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $H
 
 # PHP
 mkdir $HOME/.config/psysh
-ln -s -i ${DOTFILES_PATH}/php/psysh-config.php $HOME/.config/psysh/config.php
-ln -s -i ${DOTFILES_PATH}/php/composer.json $HOME/.composer/composer.json
+ln -s -i ${DOTFILES_PATH}/langs/php/psysh-config.php $HOME/.config/psysh/config.php
+ln -s -i ${DOTFILES_PATH}/langs/php/composer.json $HOME/.composer/composer.json
 
 # Clojure
 mkdir $HOME/.lein
-ln -s -i ${DOTFILES_PATH}/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
+ln -s -i ${DOTFILES_PATH}/langs/clojure/profiles.clj $HOME/.config/clojure/profiles.clj
 
 # Scala
 mkdir -p $HOME/.sbt/0.13/plugins
-ln -s -i ${DOTFILES_PATH}/scala/plugins.sbt $HOME/.sbt/0.13/plugins/plugins.sbt
+ln -s -i ${DOTFILES_PATH}/langs/scala/plugins.sbt $HOME/.sbt/1.0/plugins/plugins.sbt
 
 ### MacOs related stuff ###
 # Mac Plist
