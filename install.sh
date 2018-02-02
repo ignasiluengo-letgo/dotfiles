@@ -2,18 +2,21 @@
 
 DOTFILES_PATH=$HOME/.dotfiles
 
-# bash
+### Console stuff ###
+# Bash
 ln -s -i ${DOTFILES_PATH}/console/bash/.bashrc $HOME/.bashrc
 ln -s -i ${DOTFILES_PATH}/console/bash/.bash_profile $HOME/.bash_profile
 
-# Oh My Zsh
+# Zsh
 ln -s -i ${DOTFILES_PATH}/console/zsh/.zshrc $HOME/.zshrc
 
+### Git stuff ###
 # Git
 ln -s -i ${DOTFILES_PATH}/git/.gitconfig $HOME/.gitconfig
 ln -s -i ${DOTFILES_PATH}/git/.gitignore_global $HOME/.gitignore_global
 ln -s -i ${DOTFILES_PATH}/git/.gitattributes $HOME/.gitattributes
 
+### Editors stuff ###
 # Vim
 ln -s -i ${DOTFILES_PATH}/editors/vim/.vimrc $HOME/.vimrc
 
@@ -22,6 +25,7 @@ rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -s ${DOTFILES_PATH}/editors/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
+### Langs stuff ###
 # PHP
 mkdir $HOME/.config/psysh
 ln -s -i ${DOTFILES_PATH}/langs/php/psysh-config.php $HOME/.config/psysh/config.php
@@ -35,7 +39,7 @@ ln -s -i ${DOTFILES_PATH}/langs/clojure/profiles.clj $HOME/.config/clojure/profi
 mkdir -p $HOME/.sbt/0.13/plugins
 ln -s -i ${DOTFILES_PATH}/langs/scala/plugins.sbt $HOME/.sbt/1.0/plugins/plugins.sbt
 
-### MacOs related stuff ###
+### MacOs stuff ###
 # Mac Plist
 ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOME/Library/LaunchAgents/im.rafa.scheduler.drink-water.plist
 
