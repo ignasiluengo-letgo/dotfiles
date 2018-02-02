@@ -15,11 +15,11 @@ ln -s -i ${DOTFILES_PATH}/git/.gitignore_global $HOME/.gitignore_global
 ln -s -i ${DOTFILES_PATH}/git/.gitattributes $HOME/.gitattributes
 
 # Vim
-ln -s -i ${DOTFILES_PATH}/vim/.vimrc $HOME/.vimrc
+ln -s -i ${DOTFILES_PATH}/editors/vim/.vimrc $HOME/.vimrc
 
 # Sublime
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ${DOTFILES_PATH}/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
+ln -s ${DOTFILES_PATH}/editors/sublime-text-3/Packages/User $HOME/Library/Application\ Support/Sublime\ Text\ 3//Packages
 sudo ln -s -i /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # PHP
