@@ -4,7 +4,7 @@ DOTFILES_PATH=$HOME/.dotfiles
 
 # bash
 ln -s -i ${DOTFILES_PATH}/console/bash/.bashrc $HOME/.bashrc
-ln -s -i ${DOTFILES_PATH}/console/bash/.profile $HOME/.profile
+ln -s -i ${DOTFILES_PATH}/console/bash/.bash_profile $HOME/.bash_profile
 
 # Oh My Zsh
 ln -s -i ${DOTFILES_PATH}/console/zsh/.zshrc $HOME/.zshrc
@@ -40,7 +40,7 @@ ln -s -i ${DOTFILES_PATH}/langs/scala/plugins.sbt $HOME/.sbt/1.0/plugins/plugins
 ln -s -i ${DOTFILES_PATH}/etc/mac/plist/im.rafa.scheduler.drink-water.plist $HOME/Library/LaunchAgents/im.rafa.scheduler.drink-water.plist
 
 # Spectacle
-ln -s -i ${DOTFILES_PATH}/etc/mac/spectacle/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
+ln -s -i ${DOTFILES_PATH}/mac/spectacle/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
 
 # Karabiner Elements
-ln -s -i ${DOTFILES_PATH}/etc/mac/karabiner-elements $HOME/.config/karabiner
+ln -s -i ${DOTFILES_PATH}/mac/karabiner-elements $HOME/.config/karabiner
