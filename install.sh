@@ -48,3 +48,6 @@ ln -s -i ${DOTFILES_PATH}/mac/spectacle/Shortcuts.json $HOME/Library/Application
 
 # Karabiner Elements
 ln -s -i ${DOTFILES_PATH}/mac/karabiner-elements $HOME/.config/karabiner
+
+# Alfred
+ln -s -i ${DOTFILES_PATH}/mac/alfred $HOME/Library/Application\ Support/Alfred\ 3/Alfred.alfredpreferences

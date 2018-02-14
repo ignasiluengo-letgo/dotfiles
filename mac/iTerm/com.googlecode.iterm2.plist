@@ -698,9 +698,9 @@
 		<key>0xf702-0x300000</key>
 		<dict>
 			<key>Action</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string>A</string>
+			<string>0x01</string>
 		</dict>
 		<key>0xf702-0x320000</key>
 		<dict>
@@ -733,9 +733,9 @@
 		<key>0xf703-0x300000</key>
 		<dict>
 			<key>Action</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string>E</string>
+			<string>0x05</string>
 		</dict>
 		<key>0xf703-0x320000</key>
 		<dict>
@@ -871,7 +871,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 0 854 580 1920 0 1920 1080 </string>
+	<string>0 0 854 580 0 0 1280 800 </string>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_10B05570-B840-47B9-8682-D933DFEA6004_selection</key>
@@ -2081,7 +2081,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-02T08:56:24Z</date>
+	<date>2018-02-02T14:23:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
