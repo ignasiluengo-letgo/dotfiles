@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Reset the status to the last commit
+git add -A
+git reset --hard
