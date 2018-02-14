@@ -11,7 +11,7 @@
 			<key>keyword</key>
 			<string>ghs</string>
 			<key>text</key>
-			<string>GitHub Search</string>
+			<string>Search GitHub for '{query}'</string>
 			<key>url</key>
 			<string>https://github.com/search?utf8=✓&amp;q={query}</string>
 			<key>utf8</key>
@@ -24,7 +24,7 @@
 			<key>keyword</key>
 			<string>gh</string>
 			<key>text</key>
-			<string>GitHub</string>
+			<string>Go to the '{query}' page</string>
 			<key>url</key>
 			<string>https://github.com/{query}</string>
 			<key>utf8</key>
