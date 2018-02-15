@@ -30,6 +30,8 @@ alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy'
 alias catimg='imgcat'
 alias editdotfiles='subl ~/.dotfiles'
 
+alias optimize_zsh='source ${ZDOTDIR:-${HOME}}/.zlogin'
+
 # Utils for presentations. Hide/show all desktop icons.
 alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'

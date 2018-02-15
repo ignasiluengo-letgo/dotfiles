@@ -28,3 +28,7 @@ gem update
 echo ''
 echo '♢ Updating npm (JS)'
 npm update -g
+
+echo ''
+echo '♢ ZSH Zim'
+zmanage update

@@ -1,0 +1,7 @@
+zmodules=(directory environment fasd git-info history input \
+          syntax-highlighting history-substring-search prompt completion \
+          autosuggestions)
+
+ztermtitle='%n@%m:%~'
+
+zhighlighters=(main brackets)
