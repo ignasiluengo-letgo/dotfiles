@@ -5,14 +5,6 @@ DIVERGED="⥄"
 DIRTY="✗"
 NONE="✓"
 
-function short_pwd() {
-  if [[ $(pwd) == $HOME ]] ; then
-    echo "~"
-  else
-    echo ${${${:-/${(j:/:)${(M)${(s:/:)${(D)PWD:h}}#(|.)[^.]}}/${PWD:t}}//\/~/\~}/\/\//\/}
-  fi
-}
-
 prompt_rafa_pwd() {
   prompt_short_dir=$(short_pwd)
 #  git_root=$(command git rev-parse --show-toplevel 2> /dev/null) && prompt_short_dir=${prompt_short_dir#${$(short_pwd $git_root):h}/}
