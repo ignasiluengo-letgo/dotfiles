@@ -13,7 +13,6 @@ alias emptytrash='sudo empty_trash'
 alias find_broken_symlinks='find -L . -type l'
 alias fuck!='sudo $history[1]'
 alias flat_this_dir="sudo find . -mindepth 2 -type f -exec mv -i '{}' . ';'"
-alias j='z'
 alias k='kill -9'
 alias map="xargs -n1"
 alias r='realpath'
