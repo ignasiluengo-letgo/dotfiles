@@ -1,4 +1,4 @@
-zmodules=(directory environment fasd git-info history input \
+zmodules=(directory environment git-info history input \
           syntax-highlighting history-substring-search completion \
           autosuggestions)
 
