@@ -11,6 +11,7 @@ handbrake
 handshaker
 istat-menus
 java
+java8
 jetbrains-toolbox
 karabiner-elements
 osxfuse

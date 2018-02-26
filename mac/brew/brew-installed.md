@@ -95,4 +95,5 @@ webp
 wget
 xz
 yara
+z
 zstd
