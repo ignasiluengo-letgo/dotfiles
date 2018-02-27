@@ -6,7 +6,7 @@
   <sub>Go to <a href="https://www.youtube.com/channel/UC9IKtxn9AIGelnYmwYr0Lxw" target="_blank"><code>codely.tv</code></a> to know how to use it. Also you can follow me on <a href="https://twitter.com/rafaoe" target="_blank"><code>Twitter</code></a> for more.</sub>
 </p>
 
-<img src="https://user-images.githubusercontent.com/1331435/30233066-7f68d2ba-94f3-11e7-986c-ee5bc9b8c8c3.jpg" alt="rgomezcasas/dotfiles">
+<img src="https://user-images.githubusercontent.com/1331435/36726121-f1432308-1bb8-11e8-9ade-4200a3ee2757.jpg" alt="rgomezcasas/dotfiles">
 
 <p align="center">
   <a href="install.sh">Install</a>&nbsp;&nbsp;&nbsp;
