@@ -1,6 +1,3 @@
-ulimit -n 65536
-ulimit -u 1000
-
 . /usr/local/etc/profile.d/z.sh
 
 # Register all aliases
