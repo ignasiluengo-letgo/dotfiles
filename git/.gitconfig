@@ -1,6 +1,6 @@
 [user]
-    name = Ignasi Luengo
-    email = ignasi.luengo@letgo.com
+	name = Ignasi Luengo
+	email = ignasi.luengo@letgo.com
 
 [fetch]
     prune = true
@@ -85,3 +85,8 @@
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

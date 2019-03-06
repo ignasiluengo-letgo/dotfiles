@@ -25,3 +25,10 @@ autoload -Uz promptinit && promptinit
 prompt rafa
 
 source $DOTFILES_PATH/console/zsh/key-bindings.zsh
+
+# GOLANG configuration
+
+export GOPATH=$HOME/demo/go-workspace
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
